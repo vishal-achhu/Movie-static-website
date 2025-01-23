@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" type="x-icon" href="./images/movie logo.png">
+    <title>Cyber Rockerz - Series</title>
+    <!-- GOOGLE FONTS -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- BOX ICONS -->
+    <link href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" rel="stylesheet">
+    <!-- APP CSS -->
+    <style>
+        body {
+            font-family: 'Cairo', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #0d1117;
+            color: #fff;
+        }
+
+        .nav-wrapper {
+            background-color: #1a202c;
+            padding: 15px 0;
+        }
+
+        .nav .logo {
+            font-size: 1.5rem;
+            color: white; /* Cyber and ockerz are white */
+        }
+
+        .nav .logo span {
+            color: #3b82f6; /* Blue for R */
+        }
+
+        .nav-menu {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            gap: 20px;
+        }
+
+        .nav-menu a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .nav-menu a.active {
+            color: #3b82f6; /* Blue color */
+        }
+
+        .container {
+            padding: 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: #3b82f6; /* Blue color */
+        }
+
+        .series-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .series-item {
+            background-color: #1e293b;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+            text-align: center;
+            padding: 20px;
+        }
+
+        .series-item img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 4px;
+        }
+
+        .series-item h3 {
+            font-size: 1.2rem;
+            margin: 10px 0;
+            color: #fff;
+        }
+
+        .series-item p {
+            font-size: 1rem;
+            margin: 5px 0;
+            color: #d1d5db;
+        }
+
+        .btn-hover {
+            display: inline-block;
+            background-color: #3b82f6; /* Blue color */
+            color: #fff;
+            padding: 8px 16px;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn-hover:hover {
+            background-color: #2563eb; /* Darker blue */
+        }
+    </style>
+</head>
+
+<body>
+    <!-- NAVIGATION -->
+    <div class="nav-wrapper">
+        <div class="container">
+            <div class="nav">
+                <a href="index.html" class="logo">
+                    <span>Cyber</span><span class="main-color">R</span><span>ockerz</span>
+                </a>
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="genre.html">Genre</a></li>
+                    <li><a href="movies.html">Movies</a></li>
+                    <li><a href="series.html" class="active">Series</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li>
+                        <a href="sign.html" class="btn btn-hover">
+                            <span>Sign up</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- END NAVIGATION -->
+
+    <!-- SERIES SECTION -->
+    <div class="container">
+        <h2 class="section-title">Popular Series</h2>
+        <div class="series-grid">
+            <!-- Series 1 -->
+            <div class="series-item">
+                <img src="https://fr.web.img5.acsta.net/pictures/19/06/18/12/11/3956503.jpg" alt="Breaking Bad">
+                <h3>Breaking Bad</h3>
+                <p>A high school chemistry teacher turned methamphetamine kingpin.</p>
+                <a href="breaking-bad.html" class="btn-hover">Watch Now <i class="bx bx-right-arrow-alt"></i></a>
+            </div>
+            <!-- Series 2 -->
+            <div class="series-item">
+                <img src="https://miro.medium.com/v2/resize:fit:914/1*anTjhqar-Y8lth1QGepZPg.jpeg" alt="Stranger Things">
+                <h3>Stranger Things</h3>
+                <p>Strange occurrences in a small town lead to otherworldly encounters.</p>
+                <a href="stranger-things.html" class="btn-hover">Watch Now <i class="bx bx-right-arrow-alt"></i></a>
+            </div>
+            <!-- Series 3 -->
+            <div class="series-item">
+                <img src="https://www.themarysue.com/wp-content/uploads/2022/10/netflix-the-witcher-title-and-logo.jpg?fit=1200%2C717" alt="The Witcher">
+                <h3>The Witcher</h3>
+                <p>A mutated monster hunter faces dangerous beasts and mysterious foes.</p>
+                <a href="the-witcher.html" class="btn-hover">Watch Now <i class="bx bx-right-arrow-alt"></i></a>
+            </div>
+            <!-- Series 4 -->
+            <div class="series-item">
+                <img src="https://resizing.flixster.com/ITt1FPrFePNR6FSqZrZK7BocG2U=/ems.cHJkLWVtcy1hc3NldHMvdHZzZWFzb24vUlRUVjEwMTMyOTMud2VicA==" alt="Money Heist">
+                <h3>Money Heist</h3>
+                <p>A group of robbers executes an elaborate plan to rob the Royal Mint of Spain.</p>
+                <a href="money-heist.html" class="btn-hover">Watch Now <i class="bx bx-right-arrow-alt"></i></a>
+            </div>
+            <!-- Series 5 -->
+            <div class="series-item">
+                <img src="https://upload.wikimedia.org/wikipedia/en/thumb/b/ba/The_Crown_season_2.jpeg/220px-The_Crown_season_2.jpeg" alt="The Crown">
+                <h3>The Crown</h3>
+                <p>The reign of Queen Elizabeth II, exploring both personal and political challenges.</p>
+                <a href="the-crown.html" class="btn-hover">Watch Now <i class="bx bx-right-arrow-alt"></i></a>
+            </div>
+            <!-- Series 6 -->
+            <div class="series-item">
+                <img src="https://fontmeme.com/images/the-mandalorian-font.jpg" alt="The Mandalorian">
+                <h3>The Mandalorian</h3>
+                <p>A lone bounty hunter in the outer reaches of the galaxy protects a mysterious child.</p>
+                <a href="mandalorian.html" class="btn-hover">Watch Now <i class="bx bx-right-arrow-alt"></i></a>
+            </div>
+            <!-- Series 7 -->
+            <div class="series-item">
+                <img src="https://upload.wikimedia.org/wikipedia/en/b/b9/Narcos_season_1.png" alt="Narcos">
+                <h3>Narcos</h3>
+                <p>The story of Colombia's infamously violent and powerful drug cartels.</p>
+                <a href="narcos.html" class="btn-hover">Watch Now <i class="bx bx-right-arrow-alt"></i></a>
+            </div>
+            <!-- Series 8 -->
+            <div class="series-item">
+                <img src="https://m.media-amazon.com/images/M/MV5BOTU2YmM5ZjctOGVlMC00YTczLTljM2MtYjhlNGI5YWMyZjFkXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="The Office">
+                <h3>Friends</h3>
+                <p>A mockumentary on a group of typical office workers, blending humor with poignant moments.</p>
+                <a href="the-office.html" class="btn-hover">Watch Now <i class="bx bx-right-arrow-alt"></i></a>
+            </div>
+            <!-- Series 9 -->
+            <div class="series-item">
+                <img src="https://images.squarespace-cdn.com/content/v1/60cca58e4257126cac231335/1624181512935-0NOCCNPP2AGB7UUXBHX7/BM+WC+2.jpg" alt="Black Mirror">
+                <h3>Black Mirror</h3>
+                <p>A series of self-contained episodes, exploring twisted, high-tech multiverses.</p>
+                <a href="black-mirror.html" class="btn-hover">Watch Now <i class="bx bx-right-arrow-alt"></i></a>
+            </div>
+            <!-- Series 10 -->
+            <div class="series-item">
+                <img src="https://assets.gadgets360cdn.com/pricee/assets/product/202111/theboys-250_1636632874.jpg" alt="The Boys">
+                <h3>The Boys</h3>
+                <p>A gritty, dark, and brutal take on what happens when superheroes go rogue.</p>
+                <a href="the-boys.html" class="btn-hover">Watch Now <i class="bx bx-right-arrow-alt"></i></a>
+            </div>
+        </div>
+    </div>
+    <!-- END SERIES SECTION -->
+</body>
+
+</html>

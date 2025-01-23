@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" type="x-icon" href="./images/movie logo.png">
+    <title>Cyber Rockerz - Movies</title>
+    <!-- GOOGLE FONTS -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- BOX ICONS -->
+    <link href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" rel="stylesheet">
+    <!-- APP CSS -->
+    <style>
+        body {
+            font-family: 'Cairo', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #0d1117;
+            color: #fff;
+        }
+
+        .nav-wrapper {
+            background-color: #1a202c;
+            padding: 15px 0;
+        }
+
+        .nav .logo {
+            font-size: 1.5rem;
+            color: #3b82f6; /* Blue color */
+            text-decoration: none;
+        }
+
+        .nav-menu {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            gap: 20px;
+        }
+
+        .nav-menu a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .nav-menu a.active {
+            color: #3b82f6; /* Blue color */
+        }
+
+        .container {
+            padding: 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: #3b82f6; /* Blue color */
+        }
+
+        .movies-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .movie-item {
+            background-color: #1e293b;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        }
+
+        .movie-item img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+
+        .movie-info {
+            padding: 10px;
+            text-align: center;
+        }
+
+        .movie-info h3 {
+            font-size: 1.2rem;
+            margin: 10px 0;
+            color: #3b82f6; /* Blue color */
+        }
+
+        .movie-info p {
+            font-size: 0.9rem;
+            margin: 5px 0;
+            color: #d1d5db;
+        }
+
+        .btn-hover {
+            display: inline-block;
+            background-color: #3b82f6; /* Blue color */
+            color: #fff;
+            padding: 8px 16px;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn-hover:hover {
+            background-color: #2563eb; /* Darker blue */
+        }
+
+        .bx {
+            color: #3b82f6;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- NAVIGATION -->
+    <div class="nav-wrapper">
+        <div class="container">
+            <div class="nav">
+                <a href="index.html" class="logo">
+                    <i class='bx bx-movie-play bx-tada main-color'></i>Cyber<span class="main-color">R</span>ockerz
+                </a>
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="genre.html">Genre</a></li>
+                    <li><a href="movies.html" class="active">Movies</a></li>
+                    <li><a href="series.html">Series</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li>
+                        <a href="sign.html" class="btn btn-hover">
+                            <span>Sign up</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- END NAVIGATION -->
+
+    <!-- MOVIES SECTION -->
+    <div class="container">
+        <h2 class="section-title">Movies</h2>
+        <div class="movies-grid">
+            <!-- Movie 1 -->
+            <div class="movie-item">
+                <img src="https://images.filmibeat.com/img/popcorn/fan_images/movie/20279/dhruva-sarja-martin-photos-images-75018.jpg" alt="Martin">
+                <div class="movie-info">
+                    <h3>Martin</h3>
+                    <p>Action | 120 mins | HD | 16+</p>
+                    <a href="https://drive.google.com/file/d/1TSOLjICVRp9ISGn1c0o8cQ10EbZEXL82/view?usp=sharing" class="btn-hover">
+                        Watch Now <i class="bx bx-right-arrow-alt"></i>
+                    </a>
+                </div>
+            </div>
+            <!-- Movie 2 -->
+            <div class="movie-item">
+                <img src="https://m.media-amazon.com/images/M/MV5BY2U4MDRlOGQtMTFmYS00NmQzLTlhYjMtMTFiZWNmNjJmYjM2XkEyXkFqcGc@._V1_.jpg" alt="Bheema">
+                <div class="movie-info">
+                    <h3>Bheema</h3>
+                    <p>Drama | 120 mins | HD | 16+</p>
+                    <a href="https://drive.google.com/file/d/1_E4pVRSR3d1fs28vT6UIYwq4oR78KwYr/view?usp=sharing" class="btn-hover">
+                        Watch Now <i class="bx bx-right-arrow-alt"></i>
+                    </a>
+                </div>
+            </div>
+            <!-- Movie 3 -->
+            <div class="movie-item">
+                <img src="https://images.fandango.com/ImageRenderer/500/0/redesign/static/img/default_poster.png/0/images/masterrepository/Fandango/237908/Vettaiyan.jpg" alt="Vettaiyan">
+                <div class="movie-info">
+                    <h3>Vettaiyan</h3>
+                    <p>Crime | 120 mins | HD | 16+</p>
+                    <a href="https://drive.google.com/file/d/1QfyyM_dtSOWhODHPrXFSwVPPeBbIAfle/view?usp=sharing" class="btn-hover">
+                        Watch Now <i class="bx bx-right-arrow-alt"></i>
+                    </a>
+                </div>
+            </div>
+            <!-- Movie 4 -->
+            <div class="movie-item">
+                <img src="https://m.media-amazon.com/images/M/MV5BZWEwNmYwYTAtMmQxYS00ZTgwLWE0NmUtNGIwZDEyZmYwN2EwXkEyXkFqcGc@._V1_QL75_UX480_.jpg" alt="Movie 4">
+                <div class="movie-info">
+                    <h3>Devara - Part 1</h3>
+                    <p>Action | 110 mins | HD | 18+</p>
+                    <a href="https://drive.google.com/file/d/1bGa6sxbpEmbT9MhjyeYcOCIYA0T5xTK3/view?usp=sharing" class="btn-hover">
+                        Watch Now <i class="bx bx-right-arrow-alt"></i>
+                    </a>
+                </div>
+            </div>
+            <!-- Movie 5 -->
+            <div class="movie-item">
+                <img src="https://i.pinimg.com/originals/3f/d1/be/3fd1bef3dedf3134c46cec536ef6e798.jpg" alt="Movie 5">
+                <div class="movie-info">
+                    <h3>Salaar: Cease Fire - Part 1</h3>
+                    <p>Comedy | 95 mins | HD | 12+</p>
+                    <a href="https://drive.google.com/file/d/1B2SlruWArmpxLur8STVyDMET1BzYkaji/view?usp=sharing" class="btn-hover">
+                        Watch Now <i class="bx bx-right-arrow-alt"></i>
+                    </a>
+                </div>
+            </div>
+            <!-- Movie 6 -->
+            <div class="movie-item">
+                <img src="https://m.media-amazon.com/images/M/MV5BMTBjNmE2ODgtN2YwZC00NDE1LWIxZjYtZWZlMjUyZDg2MTA1XkEyXkFqcGc@._V1_.jpg" alt="Movie 6">
+                <div class="movie-info">
+                    <h3>Krishnam Pranaya Sakhi</h3>
+                    <p>Drama | 130 mins | HD | 16+</p>
+                    <a href="https://drive.google.com/file/d/18f_wrt_cb7gg-zuRU4HYi77OZUkKUUnX/view?usp=sharing" class="btn-hover">
+                        Watch Now <i class="bx bx-right-arrow-alt"></i>
+                    </a>
+                </div>
+            </div>
+            <!-- Movie 7 -->
+            <div class="movie-item">
+                <img src="https://m.media-amazon.com/images/M/MV5BZDkzNjRiN2ItMzkzMi00M2U5LWI5ZTUtOTM2YTRmMTRiZGMzXkEyXkFqcGc@._V1_.jpg" alt="Movie 7">
+                <div class="movie-info">
+                    <h3>Ibbani Tabbida Ileyali</h3>
+                    <p>Thriller | 115 mins | HD | 18+</p>
+                    <a href="https://drive.google.com/file/d/1ZcheZsv-Zxie95mSgp2avoQvLHD3CE-0/view?usp=sharing" class="btn-hover">
+                        Watch Now <i class="bx bx-right-arrow-alt"></i>
+                    </a>
+                </div>
+            </div>
+            <!-- Movie 8 -->
+            <div class="movie-item">
+                <img src="https://m.media-amazon.com/images/M/MV5BOTYyMjAyZDktZGRmOC00NGQ2LWE1YzItNDY0ZjA5MGI1OGI4XkEyXkFqcGc@._V1_QL75_UX175_.jpg" alt="Movie 8">
+                <div class="movie-info">
+                    <h3>Bagheera</h3>
+                    <p>Action | 125 mins | HD | 16+</p>
+                    <a href="https://drive.google.com/file/d/1QbCGBiqJSh_N3jQw7l6tYDPhBXmLMt8n/view?usp=sharing" class="btn-hover">
+                        Watch Now <i class="bx bx-right-arrow-alt"></i>
+                    </a>
+                </div>
+            </div>
+            <!-- Movie 9 -->
+            <div class="movie-item">
+                <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-250,h-390/et00354683-cjmtscdpdz-portrait.jpg" alt="Movie 9">
+                <div class="movie-info">
+                    <h3>Bhairathi Ranagal</h3>
+                    <p>Adventure | 90 mins | HD | 12+</p>
+                    <a href="https://drive.google.com/file/d/15a-VnO11wuICdn_FkzS8tD3rfxnVLBLS/view?usp=sharing" class="btn-hover">
+                        Watch Now <i class="bx bx-right-arrow-alt"></i>
+                    </a>
+                </div>
+            </div>
+            <!-- Movie 10 -->
+            <div class="movie-item">
+                <img src="https://images.tv9telugu.com/wp-content/uploads/2024/04/gopichand-viswam-titlew.jpg" alt="Movie 10">
+                <div class="movie-info">
+                    <h3>Viswam</h3>
+                    <p>Romance | 100 mins | HD | 12+</p>
+                    <a href="https://drive.google.com/file/d/1Pq0I3HTGS9OrEGEEAq8YPU4tIYgN1MKe/view?usp=sharing" class="btn-hover">
+                        Watch Now <i class="bx bx-right-arrow-alt"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END MOVIES SECTION -->
+</body>
+
+</html>

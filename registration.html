@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Website Registration</title>
+    <style>
+        /* General Styling */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #121212;
+            color: #ffffff;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #1c1c2b;
+            border-radius: 10px;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);
+            overflow: hidden;
+        }
+
+        .registration-header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .registration-header h2 {
+            font-size: 24px;
+            color: #00aaff;
+        }
+
+        .main-color {
+            color: #00aaff;
+        }
+
+        /* Form Styling */
+        .registration-form .form-group {
+            margin-bottom: 20px;
+        }
+
+        .registration-form label {
+            display: block;
+            margin-bottom: 5px;
+            font-size: 14px;
+            color: #cccccc;
+        }
+
+        .registration-form input,
+        .registration-form select {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #444455;
+            background-color: #2a2a3d;
+            color: #ffffff;
+            border-radius: 5px;
+            outline: none;
+            transition: border-color 0.3s ease;
+            box-sizing: border-box;
+        }
+
+        .registration-form input:focus,
+        .registration-form select:focus {
+            border-color: #00aaff;
+        }
+
+        .payment-options {
+            margin-top: 10px;
+        }
+
+        .payment-options label {
+            font-size: 14px;
+            display: inline-block;
+            margin-right: 15px;
+            color: #cccccc;
+        }
+
+        .registration-form .form-action {
+            text-align: center;
+        }
+
+        .btn {
+            background-color: #00aaff;
+            color: #ffffff;
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #0088cc;
+        }
+
+        .qr-code {
+            display: none;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .qr-code img {
+            max-width: 200px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Responsive Styling */
+        @media (max-width: 768px) {
+            .container {
+                margin: 20px;
+                padding: 15px;
+            }
+
+            .registration-header h2 {
+                font-size: 20px;
+            }
+        }
+    </style>
+    <script>
+        // Show QR code on selection
+        function toggleQRCode(paymentMethod) {
+            const qrCode = document.getElementById('qrCode');
+            if (paymentMethod === 'QR') {
+                qrCode.style.display = 'block';
+            } else {
+                qrCode.style.display = 'none';
+            }
+        }
+    </script>
+    <script>
+        emailjs.init("YOUR_USER_ID");
+    </script>
+    
+</head>
+<body>
+    <div class="container">
+        <div class="registration">
+            <div class="registration-header">
+                <h2>Register for <span class="main-color">CyberRockerz</span></h2>
+            </div>
+            <form action="send_email.php" method="POST" class="registration-form">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+                </div>
+                <div class="form-group">
+                    <label for="amount">Amount</label>
+                    <select id="amount" name="amount" required>
+                        <option value="Free">Free - ₹0</option>
+                        <option value="Premium">Premium - ₹499/month</option>
+                        <option value="VIP">VIP - ₹999/month</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="payment">Payment Method</label>
+                    <select id="payment" name="payment" onchange="toggleQRCode(this.value)" required>
+                        <option value="UPI">UPI</option>
+                        <option value="PhonePe">PhonePe</option>
+                        <option value="GooglePay">Google Pay</option>
+                        <option value="QR">QR Code</option>
+                    </select>
+                </div>
+                <div id="qrCode" class="qr-code">
+                    <p>Scan the QR Code below to complete your payment:</p>
+                    <img src="https://lh3.googleusercontent.com/d/1YeZkv60bnepx3_rFFe0HMelztJ6B40Oi" alt="QR Code for Payment">
+                </div>
+                <div class="form-action">
+                    <button type="submit" class="btn">Register Now</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

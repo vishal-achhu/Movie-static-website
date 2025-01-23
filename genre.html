@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" type="x-icon" href="./images/movie logo.png">
+    <title>Cyber Rockerz - Movies</title>
+    <!-- GOOGLE FONTS -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- BOX ICONS -->
+    <link href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" rel="stylesheet">
+    <!-- APP CSS -->
+    <style>
+        body {
+            font-family: 'Cairo', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #0d1117;
+            color: #fff;
+        }
+
+        .nav-wrapper {
+            background-color: #1a202c;
+            padding: 15px 0;
+        }
+
+        .nav .logo {
+            font-size: 1.5rem;
+            color: white; /* Cyber and ockerz are white */
+        }
+
+        .nav .logo span {
+            color: #3b82f6; /* Blue for R */
+        }
+
+        .nav-menu {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            gap: 20px;
+        }
+
+        .nav-menu a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .nav-menu a.active {
+            color: #3b82f6; /* Blue color */
+        }
+
+        .container {
+            padding: 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: #3b82f6; /* Blue color */
+        }
+
+        .genres-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .genre-item {
+            background-color: #1e293b;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+            text-align: center;
+            padding: 20px;
+        }
+
+        .genre-item img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 4px;
+        }
+
+        .genre-item h3 {
+            font-size: 1.2rem;
+            margin: 10px 0;
+            color: #fff;
+        }
+
+        .genre-item p {
+            font-size: 1rem;
+            margin: 5px 0;
+            color: #d1d5db;
+        }
+
+        .btn-hover {
+            display: inline-block;
+            background-color: #3b82f6; /* Blue color */
+            color: #fff;
+            padding: 8px 16px;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn-hover:hover {
+            background-color: #2563eb; /* Darker blue */
+        }
+    </style>
+</head>
+
+<body>
+    <!-- NAVIGATION -->
+    <div class="nav-wrapper">
+        <div class="container">
+            <div class="nav">
+                <a href="index.html" class="logo">
+                    <span>Cyber</span><span class="main-color">R</span><span>ockerz</span>
+                </a>
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="genre.html" class="active">Genre</a></li>
+                    <li><a href="movies.html">Movies</a></li>
+                    <li><a href="series.html">Series</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li>
+                        <a href="sign.html" class="btn btn-hover">
+                            <span>Sign up</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- END NAVIGATION -->
+
+    <!-- GENRE SECTION -->
+    <div class="container">
+        <h2 class="section-title">Genres</h2>
+        <div class="genres-grid">
+            <!-- Genre 1 -->
+            <div class="genre-item">
+                <img src="https://www.shutterstock.com/image-photo/action-shot-helicopter-flying-air-600nw-2501338683.jpg" alt="Action">
+                <h3>Action</h3>
+                <p>Explore thrilling and action-packed movies</p>
+                <a href="action.html" class="btn-hover">Explore <i class="bx bx-right-arrow-alt"></i></a>
+            </div>
+            <!-- Genre 2 -->
+            <div class="genre-item">
+                <img src="https://img.freepik.com/premium-vector/comedy-show-editable-text-font-effect-3d-text-title_1047305-236.jpg" alt="Comedy">
+                <h3>Comedy</h3>
+                <p>Laugh out loud with the best comedies</p>
+                <a href="comedy.html" class="btn-hover">Explore <i class="bx bx-right-arrow-alt"></i></a>
+            </div>
+            <!-- Genre 3 -->
+            <div class="genre-item">
+                <img src="https://www.shutterstock.com/image-illustration/drama-city-text-suitable-headline-260nw-684409891.jpg" alt="Drama">
+                <h3>Drama</h3>
+                <p>Dive deep into emotional and impactful stories</p>
+                <a href="drama.html" class="btn-hover">Explore <i class="bx bx-right-arrow-alt"></i></a>
+            </div>
+            <!-- Genre 4 -->
+            <div class="genre-item">
+                <img src="https://www.creativefabrica.com/wp-content/uploads/2022/09/03/Horror-Movie-3d-Editable-Text-Effect-Vec-Graphics-37674010-1-580x387.jpg" alt="Horror">
+                <h3>Horror</h3>
+                <p>Get spooked with our terrifying horror collection</p>
+                <a href="horror.html" class="btn-hover">Explore <i class="bx bx-right-arrow-alt"></i></a>
+            </div>
+            <!-- Genre 5 -->
+            <div class="genre-item">
+                <img src="https://img.freepik.com/premium-vector/romance-valentine-s-day-3d-text-style-effect-editable-illustrator-text-style_508930-395.jpg" alt="Romance">
+                <h3>Romance</h3>
+                <p>Indulge in passionate and heartwarming stories</p>
+                <a href="romance.html" class="btn-hover">Explore <i class="bx bx-right-arrow-alt"></i></a>
+            </div>
+            <!-- Genre 6 -->
+            <div class="genre-item">
+                <img src="https://image.roku.com/developer_channels/prod/ead8f7e7ed4def64344ea8cc8acbc45f3414a499ee46510c57559bb4351ef7e3.png" alt="Sci-Fi">
+                <h3>Sci-Fi</h3>
+                <p>Step into futuristic and otherworldly adventures</p>
+                <a href="sci-fi.html" class="btn-hover">Explore <i class="bx bx-right-arrow-alt"></i></a>
+            </div>
+            <!-- Genre 7 -->
+            <div class="genre-item">
+                <img src="https://i.ytimg.com/vi/Utu86DXkrq8/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLB549qfvSyj-8LmXNc-HmKjHP9wDg" alt="Thriller">
+                <h3>Thriller</h3>
+                <p>Hold your breath with suspenseful thrillers</p>
+                <a href="thriller.html" class="btn-hover">Explore <i class="bx bx-right-arrow-alt"></i></a>
+            </div>
+            <!-- Genre 8 -->
+            <div class="genre-item">
+                <img src="https://upload.wikimedia.org/wikipedia/en/0/05/Mystery.png" alt="Mystery">
+                <h3>Mystery</h3>
+                <p>Unravel the mysteries with intense storylines</p>
+                <a href="mystery.html" class="btn-hover">Explore <i class="bx bx-right-arrow-alt"></i></a>
+            </div>
+            <!-- Genre 9 -->
+            <div class="genre-item">
+                <img src="https://s3.envato.com/files/247430360/Fantasy%20Trailer%20Titles%201920x1080%20BG%20.jpg" alt="Fantasy">
+                <h3>Fantasy</h3>
+                <p>Live the fantasy with magical and imaginative worlds</p>
+                <a href="fantasy.html" class="btn-hover">Explore <i class="bx bx-right-arrow-alt"></i></a>
+            </div>
+            <!-- Genre 10 -->
+            <div class="genre-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8MwnnH55REviB2roKdkKuvDMPbUQsHF4dhtKXfhm0hIrtVE10FwiwXrrHeYG2OaZrfk4&usqp=CAU" alt="Adventure">
+                <h3>Adventure</h3>
+                <p>Go on epic adventures with action-packed films</p>
+                <a href="adventure.html" class="btn-hover">Explore <i class="bx bx-right-arrow-alt"></i></a>
+            </div>
+        </div>
+    </div>
+    <!-- END GENRE SECTION -->
+
+</body>
+
+</html>

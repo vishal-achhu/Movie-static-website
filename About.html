@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #111;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+        h1 {
+            font-size: 2.5rem;
+            color: #00bcd4;
+            margin-bottom: 20px;
+        }
+        .intro {
+            margin: 20px 0;
+        }
+        .intro p {
+            font-size: 1.2rem;
+            color: #bbb;
+            line-height: 1.6;
+        }
+        .team{
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+            margin-top: 50px;
+        }
+        .team-member{
+            position: relative;
+            background: #222;
+            padding: 20px;
+            border-radius: 15px;
+            width: 250px;
+            transition: transform 0.3s ease-in-out, background 0.3s ease-in-out;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+        }
+        .team-member:hover{
+            transform: scale(1.1);
+            background-color: #3399cc; /* Lighter blue background on hover */
+        }
+        .team-member img {
+            border-radius: 50%;
+            width: 120px;
+            height: 120px;
+            border: 4px solid #00bcd4;
+            transition: transform 0.3s ease-in-out;
+        }
+        .team-member:hover img{
+            transform: scale(1.1);
+        }
+        .team-member h3{
+            color: #fff;
+            font-size: 1.5rem;
+            margin: 15px 0;
+        }
+        .team-member p {
+            font-size: 1rem;
+            color: #bbb;
+            margin-bottom: 10px;
+        }
+        .social-links a {
+            text-decoration: none;
+            color: #00bcd4;
+            margin: 0 10px;
+            font-size: 1.2rem;
+        }
+        .social-links a:hover {
+            color: #fff;
+        }
+        .website {
+            background-color: #333;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            font-size: 1.2rem;
+        }
+        .website a {
+            color: #00bcd4;
+            text-decoration: none;
+        }
+        .website a:hover {
+            color: #fff;
+        }
+        footer {
+            margin-top: 50px;
+            font-size: 1rem;
+            color: #888;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>About Us</h1>
+
+    <div class="website">
+        <p>Visit our official website: <a href="http://127.0.0.1:5500/movies/index.html" target="_blank">www.CyberRockerz.com</a></p>
+    </div>
+
+    <div class="intro">
+        <p><strong>The Team Behind This Website:</strong><br>
+            This website was developed by a Fresher web developer and cybersecurity enthusiasts.
+            <br><br>
+            <strong>Vishal Bhat</strong><br>
+            <br><br>
+            <strong>About This Website:</strong><br>
+            This is an static website and build this website with a focus on providing an intuitive and secure user experience. From designing an interactive interface to implementing strong security features, every detail has been crafted to ensure the site is both functional and user-friendly.
+        </p>
+    </div>
+
+    
+
+    <!-- Web Developers Section -->
+    <h2 style="margin-top: 70px;">Web Developers</h2>
+    <div class="team">
+        
+
+        <!-- Team Member -->
+        <div class="team-member">
+            <img src="https://lh3.googleusercontent.com/d/1GGweiGh-3BSsS2_miEgSktD0pSnRxF7v" alt="Vishal Bhat"> <!-- Replace with actual path -->
+            <h3>Vishal Bhat</h3>
+            <p>Cyber Security Enthusiast</p>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/vishal-bhat-u-s-784708256" target="_blank">LinkedIn</a>
+                <a href="https://github.com/vishal-achhu" target="_blank">GitHub</a>
+            </div>
+        </div>
+
+        
+    <footer>
+        &copy; 2024 CyberRockerz | Designed with passion
+    </footer>
+
+</body>
+</html>
